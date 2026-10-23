@@ -61,7 +61,7 @@ public class Level04 {
         // totalsalary(list);            // Q7: Calculate the total salary expenditure for each department
         // partby60K(list);              // Q8: Partition employees by whether salary exceeds ₹60,000
         // deptwithhighsalary(list);     // Q9: Find the department with the highest average salary
-        findnames(list);                // Q10: Get employee names by department as Map<String, List<String>>
+        //findnames(list);                // Q10: Get employee names by department as Map<String, List<String>>
     }
 
     // Q1: Group employees by department using groupingBy()
