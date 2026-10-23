@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class LevelThree {
+public class Level03 {
 
     public static void main(String[] args) {
 

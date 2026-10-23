@@ -4,30 +4,7 @@ package Fundamentals;
 import java.util.*;
 import java.util.stream.Collectors;
 
-class Employee {
-    private final String name;
-    private final Integer salary;
-
-    public Employee(String name, Integer salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Integer getSalary() {
-        return salary;
-    }
-
-    @Override
-    public String toString() {
-        return name + " : " + salary; // Makes Employee objects readable when printed
-    }
-}
-
-public class LevelTwo {
+public class Level02 {
 
     public static void main(String[] args) {
 
@@ -42,13 +19,16 @@ public class LevelTwo {
                 "Java", "Spring", "Kafka", "Microservices"
         ); // String test data
 
-        List<Employee> employees = Arrays.asList(
-                new Employee("Amit", 50000),
-                new Employee("Priya", 80000),
-                new Employee("Rahul", 70000),
-                new Employee("Neha", 80000),
-                new Employee("Vijay", 60000)
-        ); // Duplicate salary tests whether distinct() is applied correctly
+        List<Employee> employees = List.of(
+                new Employee(1, "Amit", "IT", 75000, 28),
+                new Employee(2, "Priya", "HR", 55000, 25),
+                new Employee(3, "Rahul", "IT", 90000, 32),
+                new Employee(4, "Sneha", "Finance", 65000, 29),
+                new Employee(5, "Vikas", "HR", 60000, 35),
+                new Employee(6, "Neha", "IT", 85000, 26),
+                new Employee(7, "Karan", "Finance", 70000, 31),
+                new Employee(8, "Pooja", "IT", 75000, 24)
+        );// Duplicate salary tests whether distinct() is applied correctly
 
         secondHighest(list);                    // Q1: Find the second-highest distinct number
         thirdHighestSalary(employees);          // Q2: Find the third-highest distinct salary
@@ -75,7 +55,7 @@ public class LevelTwo {
 
     // Q2: Find the third-highest DISTINCT employee salary
     private static void thirdHighestSalary(List<Employee> employees) {
-        Optional<Integer> ans = employees.stream()          // Stream Employee objects
+        Optional<Double> ans = employees.stream()          // Stream Employee objects
                 .map(Employee::getSalary)                   // Transform each Employee into its salary
                 .distinct()                                 // Duplicate salaries count only once
                 .sorted(Comparator.reverseOrder())          // Rank salaries from highest to lowest
