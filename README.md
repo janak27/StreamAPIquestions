@@ -8,16 +8,14 @@ The questions are organized into six progressive levels, from fundamentals to in
 
 ## Progress
 
-| Level | Topics | Status |
-|---|---|---|
+| Level | Topics | Status    |
+|---|---|-----------|
 | Level 1 | Fundamentals | Completed |
 | Level 2 | Filtering, Sorting and Collectors | Completed |
 | Level 3 | Strings and Frequency Problems | Completed |
-| Level 4 | Grouping and Employee Problems | Planned |
-| Level 5 | Advanced Streams and Data Transformation | Planned |
-| Level 6 | Interview-Level Challenges | Planned |
-
-**Current progress: 30/60 questions completed (50%).**
+| Level 4 | Grouping and Employee Problems | Completed |
+| Level 5 | Advanced Streams and Data Transformation | Completed   |
+| Level 6 | Interview-Level Challenges | Completed   |
 
 ## Topics Covered
 
